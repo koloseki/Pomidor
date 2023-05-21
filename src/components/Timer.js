@@ -39,8 +39,20 @@ const Timer = () => {
         setTime(newMode === 'work' ? 25 * 60 : 5 * 60);
     };
 
+    const timerContainerStyles = {
+        backgroundColor: '#f5f5f5',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
+        fontFamily: 'Arial, sans-serif',
+    };
+
+
     return (
-        <div className="timer">
+        <div className="timer" style={timerContainerStyles}>
             <h1>Pomodoro Timer</h1>
             <Display time={time} mode={mode} />
             <Controls

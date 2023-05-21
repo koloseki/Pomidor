@@ -1,11 +1,21 @@
-.App {
-  text-align: center;
+body{
+  background-color: palevioletred;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #c55151;
 }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
