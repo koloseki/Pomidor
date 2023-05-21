@@ -1,12 +1,28 @@
 import React, { useState, useEffect } from 'react';
+import soundFile from './MetalGearSolidCodecSound.mp3';
 
-const Display = ({ time, mode }) => {
+const Display = ({ time, mode , handleToggleMode, handleReset }) => {
     const [formattedTime, setFormattedTime] = useState('');
+    const [isPlaying, setIsPlaying] = useState(false);
 
     useEffect(() => {
         const formatted = formatTime(time);
         setFormattedTime(formatted);
+        if (time === 0 && !isPlaying) {
+            setIsPlaying(true);
+            playSound();
+            handleTimerEnd();
+        }
     }, [time]);
+
+    const playSound = () => {
+        const audio = new Audio(soundFile);
+        audio.play();
+
+        audio.onended = () => {
+            setIsPlaying(false);
+        };
+    };
 
     const formatTime = (time) => {
         const minutes = Math.floor(time / 60);
@@ -17,6 +33,12 @@ const Display = ({ time, mode }) => {
         })}:${seconds.toLocaleString('en-US', {
             minimumIntegerDigits: 2,
         })}`;
+    };
+
+    const handleTimerEnd = () => {
+        console.log('Timer ended!');
+         handleToggleMode();
+         handleReset();
     };
 
     return (

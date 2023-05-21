@@ -37,32 +37,34 @@ const Timer = () => {
         const newMode = mode === 'work' ? 'break' : 'work';
         setMode(newMode);
         setTime(newMode === 'work' ? 25 * 60 : 5 * 60);
+        setIsRunning(false);
     };
 
-    const timerContainerStyles = {
-        backgroundColor: '#f5f5f5',
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        textAlign: 'center',
-        fontFamily: 'Arial, sans-serif',
-    };
 
 
     return (
-        <div className="timer" style={timerContainerStyles}>
+        <div className="timer">
             <h1>Pomodoro Timer</h1>
-            <Display time={time} mode={mode} />
+            <Display
+                time={time}
+                mode={mode}
+                handleToggleMode={handleToggleMode}
+                handleReset={handleReset}
+            />
             <Controls
                 isRunning={isRunning}
                 onStartStop={handleStartStop}
                 onReset={handleReset}
                 onToggleMode={handleToggleMode}
+
             />
         </div>
+
     );
 };
 
+
 export default Timer;
+
+
+
