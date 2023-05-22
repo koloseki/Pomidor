@@ -38,7 +38,6 @@ const Display = ({ time, mode , handleToggleMode, handleReset }) => {
     const handleTimerEnd = () => {
         console.log('Timer ended!');
          handleToggleMode();
-         handleReset();
     };
 
     return (

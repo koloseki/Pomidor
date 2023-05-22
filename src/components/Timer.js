@@ -40,6 +40,11 @@ const Timer = () => {
         setIsRunning(false);
     };
 
+    if (time === 0 && mode === 'work') {
+        console.log('Timer ended!');
+    }
+
+
 
 
     return (
@@ -54,7 +59,6 @@ const Timer = () => {
             <Controls
                 isRunning={isRunning}
                 onStartStop={handleStartStop}
-                onReset={handleReset}
                 onToggleMode={handleToggleMode}
 
             />
