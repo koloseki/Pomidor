@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/koloseki/pomidor/static/css/main.2d8a1e44.css",
+    "main.js": "/koloseki/pomidor/static/js/main.d18c0407.js",
+    "static/media/MetalGearSolidCodecSound.mp3": "/koloseki/pomidor/static/media/MetalGearSolidCodecSound.13b8f3537d3c765e1d78.mp3",
+    "static/media/gear-solid.svg": "/koloseki/pomidor/static/media/gear-solid.e1c283234ad342dde5869ada19a10d75.svg",
+    "index.html": "/koloseki/pomidor/index.html",
+    "main.2d8a1e44.css.map": "/koloseki/pomidor/static/css/main.2d8a1e44.css.map",
+    "main.d18c0407.js.map": "/koloseki/pomidor/static/js/main.d18c0407.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d8a1e44.css",
+    "static/js/main.d18c0407.js"
+  ]
+}
