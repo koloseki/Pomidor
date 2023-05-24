@@ -1,7 +1,7 @@
 {
   "name": "pomidor",
   "version": "0.1.0",
-  "homepage": "https://koloseki.me/pomidor.git",
+  "homepage": "https://github.com/koloseki/pomidor.git",
   "private": true,
   "dependencies": {
     "@react-buddy/ide-toolbox": "^2.3.1",
