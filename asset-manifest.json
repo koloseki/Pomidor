@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pomidor.git/static/css/main.2d8a1e44.css",
-    "main.js": "/pomidor.git/static/js/main.5d9cecc9.js",
-    "static/media/MetalGearSolidCodecSound.mp3": "/pomidor.git/static/media/MetalGearSolidCodecSound.13b8f3537d3c765e1d78.mp3",
-    "static/media/gear-solid.svg": "/pomidor.git/static/media/gear-solid.e1c283234ad342dde5869ada19a10d75.svg",
-    "index.html": "/pomidor.git/index.html",
-    "main.2d8a1e44.css.map": "/pomidor.git/static/css/main.2d8a1e44.css.map",
-    "main.5d9cecc9.js.map": "/pomidor.git/static/js/main.5d9cecc9.js.map"
+    "main.css": "/pomidor/static/css/main.2d8a1e44.css",
+    "main.js": "/pomidor/static/js/main.a0ba54ec.js",
+    "static/media/MetalGearSolidCodecSound.mp3": "/pomidor/static/media/MetalGearSolidCodecSound.13b8f3537d3c765e1d78.mp3",
+    "static/media/gear-solid.svg": "/pomidor/static/media/gear-solid.e1c283234ad342dde5869ada19a10d75.svg",
+    "index.html": "/pomidor/index.html",
+    "main.2d8a1e44.css.map": "/pomidor/static/css/main.2d8a1e44.css.map",
+    "main.a0ba54ec.js.map": "/pomidor/static/js/main.a0ba54ec.js.map"
   },
   "entrypoints": [
     "static/css/main.2d8a1e44.css",
-    "static/js/main.5d9cecc9.js"
+    "static/js/main.a0ba54ec.js"
   ]
 }
